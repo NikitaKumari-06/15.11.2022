@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Number or Character</title>
+		
+		<script>
+			function isVowel(x){
+				boolean result;
+
+					if(x == "A" || x == "E" || x == "I" || x == "O" || x == "U" ) {
+						result = true;
+					}
+					else{
+						result = false;
+					}
+				return result;
+				}
+
+				var input;
+
+
+				input = prompt("Enter a character ");
+				input = input.toUpperCase();
+				if(input.length == 1){
+					isVowel(input);
+					}
+				}
+				else{
+					while(input.length != 1){
+						prompt("Enter a character ");
+						if(input.length == 1){
+							isVowel(input);
+						}
+					}
+				}
+			}
+			function checkInpu(){
+				var value=document.forms["checkingInput"]["age"].value;
+				if (value consists of any letters)){
+						isVowel(value));
+						document.getElementById("result").innerHTML = "<b style='color:green'>A Vowel</b>";
+				}
+				
+				else{
+					if(isNaN(n)) // is not a number
+					document.getElementById("result").innerHTML = "<b style='color:red'>You must enter a number!</b>";
+				else if(n<=0) {
+					document.getElementById("result").innerHTML = "<b style='color:red'>You must enter a number greater than 0!</b>";
+				}
+				else if(n%2==0)
+					document.getElementById("result").innerHTML = "<b style='color:green'>Given number is an even.</b>";
+				else	
+					document.getElementById("result").innerHTML = "<b style='color:green'>Given number is an odd.</b>";
+			}
+		</script>
+	</head>
+	
+	<body>
+		<form>
+			<fieldset>
+				<legend>Number or Character</legend>
+				<label for="number or character">Character:</label>
+				<input type="number or character" id="number" />
+				<br/><br/>
+				<input type="button" 
+						value="Find" 
+						onclick="checkInputIsNumberOrCharacter();" />
+				<br/><br/>
+				<span id="result" />
+			</fieldset>	
+		</form>
+		
+	</body>
+</html>
+
